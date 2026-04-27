@@ -1,11 +1,12 @@
+// This is the important file in the frontend directory that tells TypeScript how to compile the code. It specifies the compiler options and the files to include in the compilation process. The "compilerOptions" section defines various settings for the TypeScript compiler, such as the target JavaScript version, libraries to include, and strictness settings. The "include" section specifies which files or directories should be included in the compilation process, in this case, the "src" directory.
+
+// Basically, this is like a control panel for TypeScript in the frontend. It tells TypeScript how to handle the code and what rules to follow when compiling it. This file is crucial for ensuring that the TypeScript code is compiled correctly and that any potential issues are caught during the development process.
+
 {
   "compilerOptions": {
+    "ignoreDeprecations": "6.0",
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -20,7 +21,5 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }
